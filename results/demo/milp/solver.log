@@ -1,0 +1,21 @@
+======================================================================
+Sovereign Optimization Engine (prototype)
+======================================================================
+Problem: refinery_3c_2p
+Type: MILP
+Variables: 6
+Constraints: 10
+Integer variables: 6
+Nonzeros: 30
+
+LP Relaxation Objective: -19410.26925898753
+
+Branch & Bound
+  Nodes explored: 15
+  Incumbent: -18569.5
+  Best bound: -18569.5
+  MIP Gap: 0.0000%
+
+Status: OPTIMAL   Objective: -18569.5   Time: 0.039 seconds
+Independent verification: PASSED -- Integer feasibility, constraints and objective independently verified
+======================================================================

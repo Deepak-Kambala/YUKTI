@@ -1,0 +1,16 @@
+instance,problem_type,known_optimal,status_off,status_auto,status_always,objective_off,objective_auto,objective_always,matches_known_off,matches_known_auto,matches_known_always,work_off,work_auto,work_always,runtime_off_sec,runtime_auto_sec,runtime_always_sec,auto_identical_to_off,verified_off,verified_auto,verified_always
+lp_textbook_2var,LP,-36.0,OPTIMAL,OPTIMAL,OPTIMAL,-36.0,-36.0,-36.0,True,True,True,5,5,5,0.0002,0.0001,0.0001,True,True,True,True
+lp_equality_diet,LP,140.0,OPTIMAL,OPTIMAL,OPTIMAL,140.0,140.0,140.0,True,True,True,6,6,6,0.0001,0.0001,0.0001,True,True,True,True
+lp_degenerate_square,LP,-4.0,OPTIMAL,OPTIMAL,OPTIMAL,-4.0,-4.0,-4.0,True,True,True,5,5,5,0.0001,0.0001,0.0001,True,True,True,True
+lp_weak_relax_base,LP,,OPTIMAL,OPTIMAL,OPTIMAL,-32.0,-32.0,-32.0,,,,9,9,9,0.0002,0.0003,0.0003,True,True,True,True
+lp_ill_conditioned_1e8,LP,-500000.0,NUMERICAL_FAILURE,OPTIMAL,OPTIMAL,0.0,-500000.0,-500000.0,False,True,True,4,6,6,0.0001,0.0002,0.0002,False,False,True,True
+lp_ill_conditioned_1e12,LP,-10000000.0,NUMERICAL_FAILURE,OPTIMAL,OPTIMAL,0.0,-10000000.0,-10000000.0,False,True,True,7,7,7,0.0001,0.0002,0.0002,False,False,True,True
+lp_mixed_units_ill_conditioned,LP,-300500.0,OPTIMAL,OPTIMAL,OPTIMAL,-300500.0,-300500.0,-300499.99999999994,True,True,True,7,7,7,0.0002,0.0002,0.0002,True,True,True,True
+milp_small_ip,MILP,,OPTIMAL,OPTIMAL,OPTIMAL,-20.0,-20.0,-20.0,,,,5,5,5,0.0012,0.0012,0.0013,True,True,True,True
+milp_binary_knapsack_5item,MILP,-33.0,OPTIMAL,OPTIMAL,OPTIMAL,-33.0,-33.0,-33.0,True,True,True,1,1,1,0.0012,0.0012,0.0011,True,True,True,True
+milp_weak_relaxation,MILP,-6.0,OPTIMAL,OPTIMAL,OPTIMAL,-6.0,-6.0,-6.0,True,True,True,1,1,1,0.0004,0.0004,0.0004,True,True,True,True
+milp_infeasible,MILP,,INFEASIBLE,INFEASIBLE,INFEASIBLE,,,,,,,0,0,0,0.0,0.0,0.0,True,False,False,False
+refinery_lp_small,LP,,OPTIMAL,OPTIMAL,OPTIMAL,-20683.89096331622,-20683.89096331622,-20683.89096331623,,,,21,21,28,0.0027,0.0026,0.0042,True,True,True,True
+refinery_lp_medium,LP,,OPTIMAL,OPTIMAL,OPTIMAL,-100007.599,-100007.599,-100007.59899999999,,,,162,162,200,0.0765,0.0765,0.0969,True,True,True,True
+refinery_lp_large,LP,,OPTIMAL,OPTIMAL,OPTIMAL,-153338.19987554845,-153338.19987554845,-153338.19987554845,,,,674,674,752,1.755,1.7387,1.9088,True,True,True,True
+refinery_milp_small_batches,MILP,,OPTIMAL,OPTIMAL,OPTIMAL,-18569.5,-18569.5,-18569.5,,,,15,15,29,0.0378,0.038,0.0793,True,True,True,True

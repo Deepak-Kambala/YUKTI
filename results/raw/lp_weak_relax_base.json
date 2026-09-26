@@ -1,0 +1,17 @@
+{
+  "instance": "lp_weak_relax_base",
+  "problem_type": "LP",
+  "variables": 2,
+  "constraints": 2,
+  "nonzeros": 4,
+  "status": "OPTIMAL",
+  "objective": -32.0,
+  "known_optimal": null,
+  "matches_known": null,
+  "runtime_sec": 0.0003,
+  "iterations_or_nodes": 9,
+  "mip_gap": 0.0,
+  "verified_feasible": true,
+  "verification_message": "Feasibility and objective independently verified",
+  "note": "Base LP used (with added integrality) as a weak-relaxation MILP stress case."
+}

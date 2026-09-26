@@ -1,0 +1,13 @@
+{
+  "problem": "ill_conditioned",
+  "type": "LP",
+  "status": "OPTIMAL",
+  "objective": -500000.0,
+  "runtime_sec": 0.0002663135528564453,
+  "verified_feasible": true,
+  "verification_message": "Feasibility and objective independently verified",
+  "values": {
+    "x": 500000.0,
+    "y": 0.0
+  }
+}

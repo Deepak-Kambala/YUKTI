@@ -1,0 +1,17 @@
+{
+  "instance": "milp_weak_relaxation",
+  "problem_type": "MILP",
+  "variables": 3,
+  "constraints": 1,
+  "nonzeros": 3,
+  "status": "OPTIMAL",
+  "objective": -6.0,
+  "known_optimal": -6.0,
+  "matches_known": true,
+  "runtime_sec": 0.0004,
+  "iterations_or_nodes": 1,
+  "mip_gap": 0.0,
+  "verified_feasible": true,
+  "verification_message": "Integer feasibility, constraints and objective independently verified",
+  "note": "3-binary 'pick at most one' MILP; LP relaxation allows fractional mixing, true optimum is single best item (z=1) -> -6."
+}

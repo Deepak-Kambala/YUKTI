@@ -1,0 +1,21 @@
+Independent re-derivation of declared known optima
+exact rational arithmetic, no simplex, no floating point
+==============================================================================
+[EXACT ] lp_textbook_2var                 exact -> double =            -36.0  declared =            -36.0  (5 feasible vertices)
+[EXACT ] lp_equality_diet                 exact -> double =            140.0  declared =            140.0  (4 feasible vertices)
+[EXACT ] lp_degenerate_square             exact -> double =             -4.0  declared =             -4.0  (6 feasible vertices)
+[ULP   ] lp_ill_conditioned_1e8           exact -> double =        -500000.0  declared =        -500000.0  (4 feasible vertices)
+          exact rational = -3689348814741910323200/7378697629483821
+          not exactly equal to the declared decimal (rel. diff 4.792e-17); the float model's true optimum rounds to the declared double
+[ULP   ] lp_ill_conditioned_1e12          exact -> double =      -10000000.0  declared =      -10000000.0  (3 feasible vertices)
+          exact rational = -9444732965739290427392/944473296573929
+          not exactly equal to the declared decimal (rel. diff 4.525e-17); the float model's true optimum rounds to the declared double
+[ULP   ] lp_mixed_units_ill_conditioned   exact -> double =        -300500.0  declared =        -300500.0  (6 feasible vertices)
+          exact rational = -1773838910127910483636/5902958103587057
+          not exactly equal to the declared decimal (rel. diff 8.167e-17); the float model's true optimum rounds to the declared double
+[EXACT ] milp_binary_knapsack_5item       exact -> double =            -33.0  declared =            -33.0  (32 integer points)
+[EXACT ] milp_weak_relaxation             exact -> double =             -6.0  declared =             -6.0  (8 integer points)
+==============================================================================
+8/8 declared known optima confirmed (equal as IEEE doubles to the exact optimum).
+5/8 are additionally exact in rational arithmetic; the rest differ only because
+the model's float coefficients are not the decimals they are written as.

@@ -1,0 +1,17 @@
+======================================================================
+Sovereign Optimization Engine (prototype)
+======================================================================
+Problem: refinery_3c_2p
+Type: LP
+Variables: 6
+Constraints: 10
+Integer variables: 0
+Nonzeros: 30
+
+Presolve  Variables: 6 -> 6   Constraints: 10 -> 10
+LP Iterations: 21
+Scaling: not applied (already well scaled, threshold 1.0e+04; spread 2.651e+02)
+
+Status: OPTIMAL   Objective: -20683.89096331622   Time: 0.003 seconds
+Independent verification: PASSED -- Feasibility and objective independently verified
+======================================================================

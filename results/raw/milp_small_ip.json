@@ -1,0 +1,17 @@
+{
+  "instance": "milp_small_ip",
+  "problem_type": "MILP",
+  "variables": 2,
+  "constraints": 2,
+  "nonzeros": 4,
+  "status": "OPTIMAL",
+  "objective": -20.0,
+  "known_optimal": null,
+  "matches_known": null,
+  "runtime_sec": 0.0012,
+  "iterations_or_nodes": 5,
+  "mip_gap": 0.0,
+  "verified_feasible": true,
+  "verification_message": "Integer feasibility, constraints and objective independently verified",
+  "note": "Small general-integer MILP; optimum determined by solver + independent verification."
+}

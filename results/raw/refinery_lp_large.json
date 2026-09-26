@@ -1,0 +1,17 @@
+{
+  "instance": "refinery_lp_large",
+  "problem_type": "LP",
+  "variables": 96,
+  "constraints": 37,
+  "nonzeros": 480,
+  "status": "OPTIMAL",
+  "objective": -153338.19987554845,
+  "known_optimal": null,
+  "matches_known": null,
+  "runtime_sec": 1.7538,
+  "iterations_or_nodes": 674,
+  "mip_gap": 0.0,
+  "verified_feasible": true,
+  "verification_message": "Feasibility and objective independently verified",
+  "note": "Synthetic refinery blending LP, large instance size. NOT real refinery data."
+}

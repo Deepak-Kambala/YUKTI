@@ -1,0 +1,17 @@
+{
+  "instance": "lp_ill_conditioned_1e8",
+  "problem_type": "LP",
+  "variables": 2,
+  "constraints": 1,
+  "nonzeros": 2,
+  "status": "OPTIMAL",
+  "objective": -500000.0,
+  "known_optimal": -500000.0,
+  "matches_known": true,
+  "runtime_sec": 0.0002,
+  "iterations_or_nodes": 6,
+  "mip_gap": 0.0,
+  "verified_feasible": true,
+  "verification_message": "Feasibility and objective independently verified",
+  "note": "Ill-conditioned LP, coefficient magnitude spread 1e8. Hand-derived optimum -500000. Returns NUMERICAL_FAILURE without the equilibration layer (linalg/scaling.py); solved with it."
+}

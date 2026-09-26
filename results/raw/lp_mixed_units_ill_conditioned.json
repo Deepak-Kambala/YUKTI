@@ -1,0 +1,17 @@
+{
+  "instance": "lp_mixed_units_ill_conditioned",
+  "problem_type": "LP",
+  "variables": 3,
+  "constraints": 2,
+  "nonzeros": 3,
+  "status": "OPTIMAL",
+  "objective": -300500.0,
+  "known_optimal": -300500.0,
+  "matches_known": true,
+  "runtime_sec": 0.0002,
+  "iterations_or_nodes": 7,
+  "mip_gap": 0.0,
+  "verified_feasible": true,
+  "verification_message": "Feasibility and objective independently verified",
+  "note": "Multi-row ill-conditioned LP imitating a units mismatch (spread 1e9). Hand-derived optimum -300500."
+}

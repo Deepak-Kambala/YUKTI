@@ -1,0 +1,17 @@
+{
+  "instance": "lp_textbook_2var",
+  "problem_type": "LP",
+  "variables": 2,
+  "constraints": 3,
+  "nonzeros": 4,
+  "status": "OPTIMAL",
+  "objective": -36.0,
+  "known_optimal": -36.0,
+  "matches_known": true,
+  "runtime_sec": 0.0002,
+  "iterations_or_nodes": 5,
+  "mip_gap": 0.0,
+  "verified_feasible": true,
+  "verification_message": "Feasibility and objective independently verified",
+  "note": "Textbook 2-variable LP, hand-verified optimum."
+}

@@ -1,0 +1,17 @@
+{
+  "instance": "refinery_milp_small_batches",
+  "problem_type": "MILP",
+  "variables": 6,
+  "constraints": 10,
+  "nonzeros": 30,
+  "status": "OPTIMAL",
+  "objective": -18569.5,
+  "known_optimal": null,
+  "matches_known": null,
+  "runtime_sec": 0.0395,
+  "iterations_or_nodes": 15,
+  "mip_gap": 0.0,
+  "verified_feasible": true,
+  "verification_message": "Integer feasibility, constraints and objective independently verified",
+  "note": "Synthetic refinery blending MILP with discretized integer batch volumes. NOT real refinery data."
+}

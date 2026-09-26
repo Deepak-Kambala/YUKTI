@@ -1,0 +1,126 @@
+==================================================================
+ Sovereign Optimization Engine -- Full Demo
+==================================================================
+
+[1/8] Checking Python environment...
+    OK (numpy = arrays only; every linear solve is our own Gaussian elimination)
+
+[2/8] Running unit/integration test suite...
+      (use 'python3 -m pytest tests/ -v' for the per-test listing)
+.....................................                                    [100%]
+37 passed in 1.76s
+
+[3/8] Running a single LP example via CLI...
+======================================================================
+Sovereign Optimization Engine (prototype)
+======================================================================
+Problem: refinery_3c_2p
+Type: LP
+Variables: 6
+Constraints: 10
+Integer variables: 0
+Nonzeros: 30
+
+Presolve  Variables: 6 -> 6   Constraints: 10 -> 10
+LP Iterations: 21
+Scaling: not applied (already well scaled, threshold 1.0e+04; spread 2.651e+02)
+
+Status: OPTIMAL   Objective: -20683.89096331622   Time: 0.003 seconds
+Independent verification: PASSED -- Feasibility and objective independently verified
+======================================================================
+
+[4/8] Running a single MILP example via CLI...
+======================================================================
+Sovereign Optimization Engine (prototype)
+======================================================================
+Problem: refinery_3c_2p
+Type: MILP
+Variables: 6
+Constraints: 10
+Integer variables: 6
+Nonzeros: 30
+
+LP Relaxation Objective: -19410.26925898753
+
+Branch & Bound
+  Nodes explored: 15
+  Incumbent: -18569.5
+  Best bound: -18569.5
+  MIP Gap: 0.0000%
+
+Status: OPTIMAL   Objective: -18569.5   Time: 0.038 seconds
+Independent verification: PASSED -- Integer feasibility, constraints and objective independently verified
+======================================================================
+
+[5/8] Running the full benchmark suite (15 instances)...
+[lp_textbook_2var              ] LP    status=OPTIMAL    obj=-36.0 time=0.000s verified=True
+[lp_equality_diet              ] LP    status=OPTIMAL    obj=140.0 time=0.000s verified=True
+[lp_degenerate_square          ] LP    status=OPTIMAL    obj=-4.0 time=0.000s verified=True
+[lp_weak_relax_base            ] LP    status=OPTIMAL    obj=-32.0 time=0.000s verified=True
+[lp_ill_conditioned_1e8        ] LP    status=OPTIMAL    obj=-500000.0 time=0.000s verified=True
+[lp_ill_conditioned_1e12       ] LP    status=OPTIMAL    obj=-10000000.0 time=0.000s verified=True
+[lp_mixed_units_ill_conditioned] LP    status=OPTIMAL    obj=-300500.0 time=0.000s verified=True
+[milp_small_ip                 ] MILP  status=OPTIMAL    obj=-20.0 time=0.001s verified=True
+[milp_binary_knapsack_5item    ] MILP  status=OPTIMAL    obj=-33.0 time=0.001s verified=True
+[milp_weak_relaxation          ] MILP  status=OPTIMAL    obj=-6.0 time=0.000s verified=True
+[milp_infeasible               ] MILP  status=INFEASIBLE obj=None time=0.000s verified=False
+[refinery_lp_small             ] LP    status=OPTIMAL    obj=-20683.89096331622 time=0.003s verified=True
+[refinery_lp_medium            ] LP    status=OPTIMAL    obj=-100007.599 time=0.075s verified=True
+[refinery_lp_large             ] LP    status=OPTIMAL    obj=-153338.19987554845 time=1.622s verified=True
+[refinery_milp_small_batches   ] MILP  status=OPTIMAL    obj=-18569.5 time=0.038s verified=True
+
+# Benchmark Summary
+
+Total instances: 15
+Optimal: 14
+Infeasible (correctly detected): 1
+Feasible but not proven optimal (node/time limit hit): 0
+Failed (numerical failure / exception): 0
+Independently verified feasible+objective: 14 / 15
+Matched known/independently-derived optimal value: 8 / 8
+Average runtime: 0.1161 sec
+
+See benchmark_results.csv for the full per-instance table and results/raw/*.json for details.
+
+
+[6/8] Measuring the equilibration layer (A/B/C, same process, best-of-3)...
+
+Total best-of-3 runtime over 15 instances:
+  scaling off    : 1.7492s
+  scaling auto   : 1.7505s  (1.00x vs off)   [shipped default]
+  scaling always : 1.9736s  (0.89x vs off)
+  off    : solved(OPTIMAL|INFEASIBLE) 13/15   matches known optimum 6/8
+  auto   : solved(OPTIMAL|INFEASIBLE) 15/15   matches known optimum 8/8
+  always : solved(OPTIMAL|INFEASIBLE) 15/15   matches known optimum 8/8
+
+Instances where `auto` differs from `off` (i.e. crossed the scaling threshold): ['lp_ill_conditioned_1e8', 'lp_ill_conditioned_1e12']
+  -> every OTHER instance is bit-identical to the unscaled path, so no previously validated result changed.
+Wrote /Users/deepakkambala/Downloads/sovereign-opt/scripts/../results/summaries/scaling_ab.csv
+
+[7/8] Generating plots from real benchmark data...
+/Users/deepakkambala/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /tmp/claude-501/matplotlib-5knjbgy8 because there was an issue with the default path (/Users/deepakkambala/.matplotlib); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+Matplotlib is building the font cache; this may take a moment.
+Wrote plots to /Users/deepakkambala/Downloads/sovereign-opt/scripts/../results/summaries
+
+[8/8] Summary
+==================================================================
+# Benchmark Summary
+
+Total instances: 15
+Optimal: 14
+Infeasible (correctly detected): 1
+Feasible but not proven optimal (node/time limit hit): 0
+Failed (numerical failure / exception): 0
+Independently verified feasible+objective: 14 / 15
+Matched known/independently-derived optimal value: 8 / 8
+Average runtime: 0.1161 sec
+
+See benchmark_results.csv for the full per-instance table and results/raw/*.json for details.
+==================================================================
+Full per-instance results: results/benchmark_results.csv
+Per-instance solution files: results/raw/*.json
+Scaling A/B measurements:  results/summaries/scaling_ab.csv
+Plots: results/summaries/runtime.png, results/summaries/bnb_nodes.png
+Solver logs from CLI runs: results/demo/lp/solver.log, results/demo/milp/solver.log
+==================================================================

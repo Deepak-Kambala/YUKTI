@@ -1,0 +1,17 @@
+{
+  "instance": "milp_infeasible",
+  "problem_type": "MILP",
+  "variables": 1,
+  "constraints": 2,
+  "nonzeros": 2,
+  "status": "INFEASIBLE",
+  "objective": null,
+  "known_optimal": null,
+  "matches_known": null,
+  "runtime_sec": 0.0,
+  "iterations_or_nodes": 0,
+  "mip_gap": null,
+  "verified_feasible": false,
+  "verification_message": "",
+  "note": "Deliberately infeasible MILP (x<=1 and x>=5 simultaneously)."
+}

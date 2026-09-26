@@ -1,0 +1,17 @@
+{
+  "instance": "lp_equality_diet",
+  "problem_type": "LP",
+  "variables": 3,
+  "constraints": 2,
+  "nonzeros": 5,
+  "status": "OPTIMAL",
+  "objective": 140.0,
+  "known_optimal": 140.0,
+  "matches_known": true,
+  "runtime_sec": 0.0002,
+  "iterations_or_nodes": 6,
+  "mip_gap": 0.0,
+  "verified_feasible": true,
+  "verification_message": "Feasibility and objective independently verified",
+  "note": "Equality-constrained LP; hand-derived optimum x=40,y=0,z=60 -> obj=140, confirmed to match the solver's independently-verified result."
+}

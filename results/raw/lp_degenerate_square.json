@@ -1,0 +1,17 @@
+{
+  "instance": "lp_degenerate_square",
+  "problem_type": "LP",
+  "variables": 2,
+  "constraints": 1,
+  "nonzeros": 2,
+  "status": "OPTIMAL",
+  "objective": -4.0,
+  "known_optimal": -4.0,
+  "matches_known": true,
+  "runtime_sec": 0.0001,
+  "iterations_or_nodes": 5,
+  "mip_gap": 0.0,
+  "verified_feasible": true,
+  "verification_message": "Feasibility and objective independently verified",
+  "note": "Degenerate vertex (multiple bounding constraints active simultaneously)."
+}

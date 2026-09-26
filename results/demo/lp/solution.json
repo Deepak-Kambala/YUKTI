@@ -1,0 +1,17 @@
+{
+  "problem": "refinery_3c_2p",
+  "type": "LP",
+  "status": "OPTIMAL",
+  "objective": -20683.89096331622,
+  "runtime_sec": 0.002807140350341797,
+  "verified_feasible": true,
+  "verification_message": "Feasibility and objective independently verified",
+  "values": {
+    "blend_crude1_product1": 94.88650036683785,
+    "blend_crude1_product2": 0.0,
+    "blend_crude2_product1": 134.92757201646089,
+    "blend_crude2_product2": 82.57242798353911,
+    "blend_crude3_product1": 30.085927616701213,
+    "blend_crude3_product2": 80.2275720164609
+  }
+}

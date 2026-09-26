@@ -1,0 +1,27 @@
+[lp_textbook_2var              ] off 0.0001s/   5 | auto 0.0001s/   5 | always 0.0001s/   5 | auto==off: True
+[lp_equality_diet              ] off 0.0001s/   6 | auto 0.0001s/   6 | always 0.0001s/   6 | auto==off: True
+[lp_degenerate_square          ] off 0.0001s/   5 | auto 0.0001s/   5 | always 0.0001s/   5 | auto==off: True
+[lp_weak_relax_base            ] off 0.0002s/   9 | auto 0.0002s/   9 | always 0.0003s/   9 | auto==off: True
+[lp_ill_conditioned_1e8        ] off 0.0001s/   4 | auto 0.0002s/   6 | always 0.0001s/   6 | auto==off: False
+[lp_ill_conditioned_1e12       ] off 0.0001s/   7 | auto 0.0002s/   7 | always 0.0002s/   7 | auto==off: False
+[lp_mixed_units_ill_conditioned] off 0.0002s/   7 | auto 0.0002s/   7 | always 0.0002s/   7 | auto==off: True
+[milp_small_ip                 ] off 0.0012s/   5 | auto 0.0012s/   5 | always 0.0013s/   5 | auto==off: True
+[milp_binary_knapsack_5item    ] off 0.0012s/   1 | auto 0.0012s/   1 | always 0.0011s/   1 | auto==off: True
+[milp_weak_relaxation          ] off 0.0004s/   1 | auto 0.0004s/   1 | always 0.0004s/   1 | auto==off: True
+[milp_infeasible               ] off 0.0000s/   0 | auto 0.0000s/   0 | always 0.0000s/   0 | auto==off: True
+[refinery_lp_small             ] off 0.0026s/  21 | auto 0.0026s/  21 | always 0.0041s/  28 | auto==off: True
+[refinery_lp_medium            ] off 0.0740s/ 162 | auto 0.0745s/ 162 | always 0.0947s/ 200 | auto==off: True
+[refinery_lp_large             ] off 1.6455s/ 674 | auto 1.6903s/ 674 | always 1.8698s/ 752 | auto==off: True
+[refinery_milp_small_batches   ] off 0.0391s/  15 | auto 0.0391s/  15 | always 0.0801s/  29 | auto==off: True
+
+Total best-of-3 runtime over 15 instances:
+  scaling off    : 1.7649s
+  scaling auto   : 1.8104s  (0.97x vs off)   [shipped default]
+  scaling always : 2.0526s  (0.86x vs off)
+  off    : solved(OPTIMAL|INFEASIBLE) 13/15   matches known optimum 6/8
+  auto   : solved(OPTIMAL|INFEASIBLE) 15/15   matches known optimum 8/8
+  always : solved(OPTIMAL|INFEASIBLE) 15/15   matches known optimum 8/8
+
+Instances where `auto` differs from `off` (i.e. crossed the scaling threshold): ['lp_ill_conditioned_1e8', 'lp_ill_conditioned_1e12']
+  -> every OTHER instance is bit-identical to the unscaled path, so no previously validated result changed.
+Wrote /Users/deepakkambala/Downloads/sovereign-opt/scripts/../results/summaries/scaling_ab.csv

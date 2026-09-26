@@ -1,0 +1,17 @@
+{
+  "instance": "milp_binary_knapsack_5item",
+  "problem_type": "MILP",
+  "variables": 5,
+  "constraints": 1,
+  "nonzeros": 5,
+  "status": "OPTIMAL",
+  "objective": -33.0,
+  "known_optimal": -33.0,
+  "matches_known": true,
+  "runtime_sec": 0.0012,
+  "iterations_or_nodes": 1,
+  "mip_gap": 0.0,
+  "verified_feasible": true,
+  "verification_message": "Integer feasibility, constraints and objective independently verified",
+  "note": "5-item 0/1 knapsack, capacity 10; model MINIMIZES -value, so optimal objective is -33 (items a+b+c+d, weight 10, true max value 33), cross-checked by brute force over all 32 subsets in tests/test_milp.py."
+}
